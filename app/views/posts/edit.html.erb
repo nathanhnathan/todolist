@@ -9,10 +9,7 @@
         Body
         <%= p.text_area :body, placeholder: 'Eat 10 bananas...' %>
       </label>
-      <label>
-      <%= check_box_tag(:done) %>
-      <%= label_tag(:done, "Task done") %>
-    </label>
+      
       <%= p.submit 'Save post', class: 'button' %>
     <% end %>
 
