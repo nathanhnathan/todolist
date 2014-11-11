@@ -1,0 +1,21 @@
+<div class='row'>
+  <div class='large-12 small-12 columns'>
+    <h1>Add a user</h1>
+    <%= form_for(User.new, method: :post, url: sessions_path) do |u| %>
+      <label>First name
+        <%= u.text_field :fname, placeholder: 'First name' %>
+      </label>
+      <label>Last name
+        <%= u.text_field :lname, placeholder: 'Last name' %>
+      </label>
+      <label>Email
+        <%= u.text_field :email, placeholder: 'Email address' %>
+      </label>
+      <label>Password
+        <%= u.password_field :password, placeholder: 'Password' %>
+      </label>
+
+      <%= u.submit 'Save user', class: 'button' %>
+    <% end %>
+</div><!--12-->
+</div><!--row-->
