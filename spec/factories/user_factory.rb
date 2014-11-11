@@ -12,13 +12,16 @@
 #
 
 FactoryGirl.define do
-  factory :alex, class: User do
-    fname 'Alex'
-    lname 'Meyers'
-    email 'alex@daapr.com'
-    password 'verynice'
-  end
-   factory :invalid_post, class: Post do
-    body 'Decapitated'
-end
+	factory :user do
+		fname 'Feifan'
+		lname 'Zhou'
+		email 'feifan@tunetap.com'
+		password 'letmein'
+	end
+	factory :alex, class:User do
+		fname 'Alex'
+		lname 'Meyers'
+		email 'alex@daapr.com'
+		password 'verynice'
+	end
 end

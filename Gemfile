@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 
-  gem 'rspec-rails'
-  gem 'rspec-mocks'
-  gem 'rspec-its'
-  gem 'factory_girl_rails'
-
+gem 'rspec-rails'
+gem 'rspec-mocks'
+gem 'rspec-its'
+gem 'factory_girl_rails'
 gem 'bcrypt'
 gem 'annotate'
 gem 'foundation-rails'

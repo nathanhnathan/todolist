@@ -7,6 +7,7 @@
 #  body       :text
 #  created_at :datetime
 #  updated_at :datetime
+#  user_id    :integer
 #
 
 class Post < ActiveRecord::Base
@@ -14,4 +15,5 @@ class Post < ActiveRecord::Base
 
 	validates_presence_of :title
 	validates_presence_of :body
+	has_many :comments, dependent: :destroy
 end

@@ -1,10 +1,12 @@
 <div class='row'>
-	<div class=’'arge-12 small-12 columns'>
+	<div class='large-12 small-12 columns'>
 		<h1>Whole List</h1>
 		<hr />
 		<% @posts.each do |p| %>
 		  <h2><%= link_to p.title, p %></h2>
 		  <p><%= p.body %></p>
+		  <%= check_box_tag(:done) %>
+      <%= label_tag(:done, "Task done") %>
 		  <hr />
 		<% end %>
 	</div><!--12--> 
